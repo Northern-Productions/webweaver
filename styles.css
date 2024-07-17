@@ -59,17 +59,17 @@ html, body {
 
 /* Parallax Img */
 .img1 {
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Fstream_on_yellow_foliage_covered_rock_during_daytime_hd_nature-HD.jpg&f=1&nofb=1);
+  background-image: url(./images/Main-img-1.jpg);
   min-height: 100%;
 }
 
 .img2 {
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F01%2F98920-nature-mountain-trees.jpg&f=1&nofb=1);
+  background-image: url(./images/Main-img-2.jpg);
   min-height: 100%;
 }
 
 .img3 {
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2019%2F09%2F146953-landscape-morning-nature-beautiful-road-autumn-trees-leaves.jpg&f=1&nofb=1);
+  background-image: url(./images/Main-img-3.jpg);
   min-height: 100%;
 }
 
