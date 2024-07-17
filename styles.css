@@ -1,0 +1,126 @@
+/* Main site */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  font: 400 15px/1.8 "Lato", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Title and Nav bar */
+.nav-bar-container {
+  height: 1.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(180, 180, 180, 0.5);
+  padding: 1rem 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.title a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-bar {
+  display: flex;
+  margin-right: 5%;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.nav-bar a:hover {
+  color: #696969;
+}
+
+/* Parallax Img */
+.img1 {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Fstream_on_yellow_foliage_covered_rock_during_daytime_hd_nature-HD.jpg&f=1&nofb=1);
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F01%2F98920-nature-mountain-trees.jpg&f=1&nofb=1);
+  min-height: 100%;
+}
+
+.img3 {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2019%2F09%2F146953-landscape-morning-nature-beautiful-road-autumn-trees-leaves.jpg&f=1&nofb=1);
+  min-height: 100%;
+}
+
+.img1, .img2, .img3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100vh;
+}
+
+.home-text-img {
+  width: 50%;
+  max-height: 100vh;
+}
+
+/* Home page */
+/* Main Intro */
+.main-intro {
+  background-color: #dd9;
+  padding: 40px;
+}
+  
+.main-intro h2 {
+  text-align: center;
+}
+
+/* Sound Baths page */
+/* Tree Video */
+.tree-video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tree-video video {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.sb-caption {
+  width: 50%;
+  margin: 15rem 0 0;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: wheat;
+  border-radius: 20px;
+}
