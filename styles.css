@@ -101,8 +101,8 @@ html, body {
 
 .main-section p {
   text-align: center;
-  line-height: 18px;
-  font-size: 16px;
+  line-height: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .section-2 {
