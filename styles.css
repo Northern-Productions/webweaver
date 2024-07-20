@@ -89,13 +89,49 @@ html, body {
 
 /* Home page */
 /* Main Intro */
-.main-intro {
+.main-section {
   background-color: #dd9;
   padding: 40px;
 }
   
-.main-intro h2 {
+.main-section h2 {
   text-align: center;
+  margin: 0 0 2rem;
+}
+
+.main-section p {
+  text-align: center;
+  line-height: 18px;
+  font-size: 16px;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section-2 div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.section-2 h3 {
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.section-2 img {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
 }
 
 /* Sound Baths page */
