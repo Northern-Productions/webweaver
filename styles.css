@@ -28,7 +28,7 @@ html, body {
 .title {
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 5%;
+  margin-left: 4%;
 }
 
 .title a {
@@ -45,7 +45,7 @@ html, body {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0 1rem;
   height: 2rem;
   display: flex;
@@ -101,16 +101,11 @@ html, body {
 /* Home page */
 /* Main Intro */
 .main-section {
-  background-color: #dd9;
+  background: linear-gradient(to bottom right, rgb(251 215 157), #fffdc6);
   padding: 40px;
 }
   
-.main-section h2 {
-  text-align: center;
-  margin: 0 0 2rem;
-}
-
-.main-section p {
+.section-1-content {
   text-align: center;
   line-height: 1.6rem;
   font-size: 1.3rem;
@@ -125,7 +120,7 @@ html, body {
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   background-color: white;
   border-radius: 10px;
@@ -137,12 +132,27 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 5rem;
+  width: 100%;
+  border-bottom: 1px solid #cbcbcb;
 }
 
 .section-2 img {
   width: 100%;
-  border-radius: 0 0 10px 10px;
+}
+
+.section-2 button {
+  margin: 1rem 0 0;
+  font-size: 1rem;
+  border: none;
+  background-color: #7ccb91;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.section-2 p {
+  margin: 0.5rem 1rem 1rem;
 }
 
 /* Sound Baths page */
@@ -170,4 +180,10 @@ html, body {
   font-size: 1.5rem;
   background-color: wheat;
   border-radius: 20px;
+}
+
+.bobobo {
+  position: absolute;
+  top: 50%;
+  right: 25%;
 }
