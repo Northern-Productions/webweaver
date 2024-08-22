@@ -57,6 +57,17 @@ html, body {
   color: #696969;
 }
 
+.menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 5%;
+}
+
+.menu-btn:hover {
+  color: #696969;
+}
+
 /* Parallax Img */
 .img1 {
   background-image: url(./images/Main-img-1.jpg);
