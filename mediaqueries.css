@@ -12,9 +12,14 @@
     
   }
 
+  .main-section {
+    padding: 2rem 4rem;
+  }
+
   .main-section p {
     font-size: 1.1rem;
     line-height: 1.2rem;
+    margin-top: 1rem;
   }
 
   .section-2 {
@@ -30,6 +35,6 @@
 
 @media (max-width: 425px) {
   .main-section {
-    padding: 1rem;
+    padding: 2rem;
   }
 }

@@ -102,7 +102,7 @@ html, body {
 /* Main Intro */
 .main-section {
   background: linear-gradient(to bottom right, rgb(251 215 157), #fffdc6);
-  padding: 40px;
+  padding: 2rem 6rem;
 }
   
 .section-1-content {
@@ -116,7 +116,7 @@ html, body {
   justify-content: space-evenly;
 }
 
-.section-2 div {
+.main-card {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -126,7 +126,7 @@ html, body {
   border-radius: 10px;
 }
 
-.section-2 h3 {
+.main-card h3 {
   text-align: center;
   margin: 0;
   display: flex;
@@ -137,12 +137,16 @@ html, body {
   border-bottom: 1px solid #cbcbcb;
 }
 
-.section-2 img {
+.main-card img {
   width: 100%;
 }
 
-.section-2 button {
-  margin: 1rem 0 0;
+.main-card a {
+  margin-top: auto;
+}
+
+.main-card button {
+  margin: 1rem 0;
   font-size: 1rem;
   border: none;
   background-color: #7ccb91;
@@ -151,8 +155,9 @@ html, body {
   cursor: pointer;
 }
 
-.section-2 p {
+.main-card p {
   margin: 0.5rem 1rem 1rem;
+  text-align: center;
 }
 
 /* Sound Baths page */
