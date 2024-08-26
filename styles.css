@@ -4,6 +4,7 @@ html {
 }
 
 html, body {
+  position: relative;
   font: 400 15px/1.8 "Lato", sans-serif;
   height: 100%;
   margin: 0;
@@ -66,6 +67,35 @@ html, body {
 
 .menu-btn:hover {
   color: #696969;
+}
+
+.phone-menu {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 59px;
+  right: 0px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(122, 122, 122, 0.7);
+  opacity: 0;
+  transition: visibility 0s 0.2s, opacity 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.phone-menu.active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.phone-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 /* Parallax Img */
