@@ -2,6 +2,8 @@ const menuButton = document.getElementById("phone-menu-btn");
 const menu = document.getElementById("phone-menu");
 let isMenuOpen = false;
 
+const header = document.getElementById("header");
+
 // Function to toggle menu display
 const toggleMenu = () => {
   if (isMenuOpen) {
@@ -31,5 +33,15 @@ document.addEventListener("click", () => {
     menu.classList.remove("active");
     isMenuOpen = false;
     console.log(isMenuOpen);
+  }
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 10) {
+    header.classList.add("scroll-fade-in");
+    header.classList.remove("scroll-fade-out");
+  } else {
+    header.classList.remove("scroll-fade-in");
+    header.classList.add("scroll-fade-out");
   }
 });
