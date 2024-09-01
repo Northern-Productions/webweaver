@@ -1,13 +1,18 @@
 .scroll-fade-in {
   background-color: #e1df8f;
-  transition: background-color 0.5s ease-in, color 0.5s ease-in;
+  transition: background-color 1s ease-in, color 1s ease-in;
 }
 
 .scroll-fade-out {
-  transition: background-color 0.5s ease-out, color 0.5s ease-out;
+  transition: background-color 1s ease-out, color 1s ease-out;
 }
 
 .title-md {
   text-align: center;
-  margin: 0 0 2rem;
+  margin: 0 0 1rem;
+}
+
+.spacer {
+  border-top: 1px solid black;
+  width: 70%;
 }

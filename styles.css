@@ -18,7 +18,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: rgba(180, 180, 180, 0.5);
+  background: linear-gradient(to bottom, #ffffffdd, #ffffff88, #ffffff44, transparent);
   padding: 1rem 0;
   top: 0;
   right: 0;
@@ -133,6 +133,10 @@ html, body {
 .main-section {
   background: linear-gradient(to bottom right, rgb(251 215 157), #fffdc6);
   padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
   
 .section-1-content {
@@ -154,6 +158,7 @@ html, body {
   align-items: center;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 10px 10px 12px -14px;
 }
 
 .main-card h3 {
@@ -188,6 +193,45 @@ html, body {
 .main-card p {
   margin: 0.5rem 1rem 1rem;
   text-align: center;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3-title {
+  font-size: 2rem;
+}
+
+.section-3-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+
+.section-3-content img {
+  width: 35%;
+  box-shadow: 10px 15px 20px -10px;
+}
+
+.section-3-content p {
+  margin: 0 0 0 3rem;
+}
+
+.section-4 {
+  text-align: center;
+}
+
+.section-4 button {
+  border: none;
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 /* Sound Baths page */
