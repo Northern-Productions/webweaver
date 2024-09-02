@@ -132,7 +132,7 @@ html, body {
 /* Main Intro */
 .main-section {
   background: linear-gradient(to bottom right, rgb(251 215 157), #fffdc6);
-  padding: 2rem 6rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,6 +143,7 @@ html, body {
   text-align: center;
   line-height: 1.6rem;
   font-size: 1.3rem;
+  margin: 2rem 4rem;
 }
 
 .section-2 {
@@ -223,6 +224,15 @@ html, body {
 
 .section-4 {
   text-align: center;
+  display: flex;
+}
+
+.section-4-content p {
+  margin: 0 4rem 0 3rem;
+}
+
+.section-4 img {
+  width: 40%;
 }
 
 .section-4 button {
@@ -232,6 +242,7 @@ html, body {
   border-radius: 7px;
   font-size: 15px;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 /* Sound Baths page */

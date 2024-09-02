@@ -1,5 +1,5 @@
 .scroll-fade-in {
-  background-color: #e1df8f;
+  background: linear-gradient(to bottom, #ffffff, #ffffff, transparent 100%);
   transition: background-color 1s ease-in, color 1s ease-in;
 }
 
@@ -9,7 +9,7 @@
 
 .title-md {
   text-align: center;
-  margin: 0 0 1rem;
+  margin: 0 0 2rem;
 }
 
 .spacer {
