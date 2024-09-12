@@ -265,13 +265,13 @@ html, body {
 
 /* Sound Baths page */
 /* Tree Video */
-.tree-video {
+.fixed-BG {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.tree-video video {
+.fixed-BG img {
   position: fixed;
   z-index: -1;
   right: 0;
