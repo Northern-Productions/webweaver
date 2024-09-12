@@ -9,9 +9,27 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Title and Nav bar */
+#cloud-header {
+  height: 5rem;
+  position: fixed;
+  padding: 1rem 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+
 .nav-bar-container {
   height: 1.9rem;
   display: flex;
@@ -100,7 +118,7 @@ html, body {
 
 /* Parallax Img */
 .img1 {
-  background-image: url(./images/Main-img-1.jpg);
+  background-image: url(images/WWLogo.png);
   min-height: 100%;
 }
 
@@ -214,7 +232,7 @@ html, body {
 }
 
 .section-3-content img {
-  width: 35%;
+  width: 20%;
   box-shadow: 10px 15px 20px -10px;
 }
 

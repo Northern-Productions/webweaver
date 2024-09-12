@@ -2,7 +2,7 @@ const menuButton = document.getElementById("phone-menu-btn");
 const menu = document.getElementById("phone-menu");
 let isMenuOpen = false;
 
-const header = document.getElementById("header");
+const cloudHeader = document.getElementById("cloud-header");
 
 // Function to toggle menu display
 const toggleMenu = () => {
@@ -36,12 +36,55 @@ document.addEventListener("click", () => {
   }
 });
 
+// Event listener for window scroll
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 10) {
-    header.classList.add("scroll-fade-in");
-    header.classList.remove("scroll-fade-out");
+    cloudHeader.classList.add("scroll-fade-in");
+    cloudHeader.classList.remove("scroll-fade-out");
   } else {
-    header.classList.remove("scroll-fade-in");
-    header.classList.add("scroll-fade-out");
+    cloudHeader.classList.remove("scroll-fade-in");
+    cloudHeader.classList.add("scroll-fade-out");
   }
+});
+
+const overlay = document.querySelector(".overlay");
+
+// Event listener for overlay
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("load")) {
+    event.preventDefault();
+    overlay.style.display = "block";
+    requestAnimationFrame(() => {
+      overlay.classList.add("fade-in");
+      overlay.classList.remove("fade-out");
+    });
+
+    overlay.addEventListener(
+      "transitionend",
+      function () {
+        window.location.href = event.target.getAttribute("data-target");
+      },
+      { once: true }
+    );
+  }
+});
+
+// Ensure the overlay is visible and has the fade-in class when the page starts loading
+document.addEventListener("DOMContentLoaded", function () {
+  overlay.style.display = "block";
+  overlay.classList.add("fade-in");
+});
+
+// Event listener for window loading screen
+window.addEventListener("load", function () {
+  overlay.classList.add("fade-out");
+  overlay.classList.remove("fade-in");
+
+  overlay.addEventListener(
+    "transitionend",
+    function () {
+      overlay.style.display = "none";
+    },
+    { once: true }
+  );
 });
