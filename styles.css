@@ -21,7 +21,7 @@ html, body {
 
 /* Title and Nav bar */
 #cloud-header {
-  height: 5rem;
+  height: 3rem;
   position: fixed;
   padding: 1rem 0;
   top: 0;
@@ -118,27 +118,33 @@ html, body {
 
 /* Parallax Img */
 .img1 {
-  background-image: url(images/WWLogo.png);
-  min-height: 100%;
+  background-image: url(images/Main-img-1.jpg);
+  z-index: -1;
 }
 
 .img2 {
   background-image: url(./images/Main-img-2.jpg);
-  min-height: 100%;
+  z-index: -2;
 }
 
 .img3 {
   background-image: url(./images/Main-img-3.jpg);
-  min-height: 100%;
+  z-index: -3;
 }
 
-.img1, .img2, .img3 {
+.img4 {
+  background-image: url(./images/aquarium-night-time-edit.jpg);
+  z-index: -4;
+}
+
+.img1, .img2, .img3, .img4 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100vh;
+  min-height: 100%;
 }
 
 .home-text-img {
@@ -149,12 +155,19 @@ html, body {
 /* Home page */
 /* Main Intro */
 .main-section {
-  background: linear-gradient(to bottom right, rgb(251 215 157), #fffdc6);
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 10px 0px #ffdcbe;
+}
+
+.main-bg {
+  background: linear-gradient(to bottom right, rgb(251 215 157), #fffdc6);
+}
+
+.main-padding {
+  padding: 2rem;
 }
   
 .section-1-content {
@@ -203,7 +216,7 @@ html, body {
   margin: 1rem 0;
   font-size: 1rem;
   border: none;
-  background-color: #7ccb91;
+  background-color: lightblue;
   border-radius: 3px;
   padding: 5px 10px;
   cursor: pointer;
@@ -216,7 +229,6 @@ html, body {
 
 .section-3 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -227,17 +239,20 @@ html, body {
 
 .section-3-content {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 2rem 0;
+  text-align: center;
 }
 
-.section-3-content img {
-  width: 20%;
+.section-3 img {
+  width: 40%;
   box-shadow: 10px 15px 20px -10px;
 }
 
 .section-3-content p {
-  margin: 0 0 0 3rem;
+  margin: 0 3rem;
 }
 
 .section-4 {
@@ -246,7 +261,7 @@ html, body {
 }
 
 .section-4-content p {
-  margin: 0 4rem 0 3rem;
+  margin: 0 4rem 0 2rem;
 }
 
 .section-4 img {
@@ -261,6 +276,26 @@ html, body {
   font-size: 15px;
   cursor: pointer;
   margin-top: 1rem;
+}
+
+.section-5 {
+  text-align: center;
+  position: relative;
+}
+
+.section-5 img {
+  width: 100%;
+}
+
+.section-5-text-overlay {
+  position: fixed;
+  top: 10%;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 6rem 2rem;
+  line-height: 2.5rem;
 }
 
 /* Sound Baths page */
@@ -290,8 +325,7 @@ html, body {
   border-radius: 20px;
 }
 
-.bobobo {
-  position: absolute;
-  top: 50%;
-  right: 25%;
+.footer {
+  text-align: center;
+  background: linear-gradient(to bottom right, rgb(255, 208, 115), #cdbe4d);
 }
