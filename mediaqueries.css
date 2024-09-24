@@ -33,7 +33,10 @@
   }
 
   .section-3-title {
-    margin-top: 0;
+    padding: 0 1rem 1rem;
+    margin: 0;
+    font-size: 150%;
+    
   }
 
   .section-3-content {
@@ -67,22 +70,36 @@
 
   .section-5-text-overlay {
     top: 54%;
-    left: 5%;
+    left: 0%;
     transform: translate(0%, -50%);
     font-size: 16px;
     line-height: 1.8rem;
   }
+
+  /* Soundbath page */
+  .fixed-BG img {
+    right: -10rem;
+  }
 }
 
 @media (max-width: 425px) {
-  .main-section {
-    padding: 2rem;
+  .section-3-title {
+    font-size: 130%;
+    padding: 0 1rem 0rem;
+  }
+
+  .section-3-content p {
+    font-size: 88%;
+  }
+
+  .section-3 img {
+    min-height: 14rem;
   }
 
   .section-5-text-overlay {
     top: 54%;
-    left: -15%;
-    transform: translate(10%, -50%);
+    left: -12%;
+    transform: translate(5%, -50%);
     font-size: 16px;
     line-height: 1.5rem;
   }

@@ -244,11 +244,11 @@ html, body {
   align-items: center;
   margin: 2rem 0;
   text-align: center;
+  padding: 0 0 0 1rem;
 }
 
 .section-3 img {
   width: 40%;
-  box-shadow: 10px 15px 20px -10px;
 }
 
 .section-3-content p {
@@ -312,7 +312,7 @@ html, body {
   right: 0;
   bottom: 0;
   min-width: 100%; 
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .sb-caption {
@@ -328,4 +328,11 @@ html, body {
 .footer {
   text-align: center;
   background: linear-gradient(to bottom right, rgb(255, 208, 115), #cdbe4d);
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20% 10%;
 }
