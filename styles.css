@@ -137,7 +137,17 @@ html, body {
   z-index: -4;
 }
 
-.img1, .img2, .img3, .img4 {
+.sb-img1 {
+  background-image: url(./images/Soundbath-placeholder.png);
+  z-index: -1;
+}
+
+.sb-img2 {
+  background-image: url(./images/SB-flowersInField.png);
+  z-index: -2;
+}
+
+.img1, .img2, .img3, .img4, .sb-img1, .sb-img2 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -154,7 +164,8 @@ html, body {
 
 /* Home page */
 /* Main Intro */
-.main-section {
+.main-section,
+.sb-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,21 +311,6 @@ html, body {
 
 /* Sound Baths page */
 /* Tree Video */
-.fixed-BG {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.fixed-BG img {
-  position: fixed;
-  z-index: -1;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100vh;
-}
-
 .sb-caption {
   width: 50%;
   margin: 15rem 0 0;
@@ -323,6 +319,12 @@ html, body {
   font-size: 1.5rem;
   background-color: wheat;
   border-radius: 20px;
+}
+
+.sb-section-1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 .footer {
