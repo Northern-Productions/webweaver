@@ -19,6 +19,89 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*----------------------------------------------------------------------------*/
+
+/* Uni styles */
+body {
+  line-height: 25px;
+}
+
+/* Google Fonts */
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+/* Google Fonts */
+
+/* Title and Nav bar effect */
+.scroll-fade-in {
+  background: linear-gradient(to bottom, #ffffffee 60%, transparent 100%);
+  opacity: 1;
+  transition: opacity 2s ease-out;
+}
+
+.scroll-fade-out {
+  background: linear-gradient(to bottom, #ffffff, #ffffff, transparent 100%);
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+/* Title and Nav bar effect */
+
+/* Full screen overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: wheat;
+  opacity: 1;
+  display: block;
+  transition: opacity 1.5s ease;
+}
+
+/* Fade paragraph scroll effect */
+.fade-paragraph {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 0;
+}
+/* Full screen overlay */
+/* Fade paragraph scroll effect */
+
+.title-md {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+.spacer {
+  border-top: 1px solid black;
+  width: 70%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.blue {
+  color: #5d60b9;
+}
+/* Uni styles */
+
+/*----------------------------------------------------------------------------*/
+
 /* Title and Nav bar */
 #cloud-header {
   height: 3rem;
@@ -116,6 +199,8 @@ html, body {
   letter-spacing: 0.5px;
 }
 
+/*----------------------------------------------------------------------------*/
+
 /* Parallax Img */
 .img1 {
   background-image: url(images/Main-img-1.webp), url(images/Main-img-1.jpg);
@@ -157,10 +242,7 @@ html, body {
   min-height: 100%;
 }
 
-.home-text-img {
-  width: 50%;
-  max-height: 100vh;
-}
+/*----------------------------------------------------------------------------*/
 
 /* Home page */
 /* Main Intro */
@@ -180,6 +262,8 @@ html, body {
 .main-padding {
   padding: 2rem;
 }
+
+/*----------------------------------------------------------------------------*/
   
 .section-1-content {
   text-align: center;
@@ -309,6 +393,8 @@ html, body {
   line-height: 2.5rem;
 }
 
+/*----------------------------------------------------------------------------*/
+
 /* Sound Baths page */
 /* Tree Video */
 .sb-caption {
@@ -327,6 +413,9 @@ html, body {
   font-size: 1.1rem;
 }
 
+/*----------------------------------------------------------------------------*/
+
+/* Footer */
 .footer {
   text-align: center;
   background: linear-gradient(to bottom right, rgb(255, 208, 115), #cdbe4d);
@@ -337,4 +426,114 @@ html, body {
   justify-content: space-between;
   align-items: center;
   margin: 0 20% 10%;
+}
+
+/*----------------------------------------------------------------------------*/
+
+/* media queries */
+@media (min-width: 1440px) {
+  
+}
+
+@media (max-width: 768px) {
+  .nav-bar-container {
+    height: 2rem;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+    
+  }
+
+  .main-section p {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    margin: 2rem 1rem 0;
+  }
+
+  .section-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-2 div {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .section-3-title {
+    padding: 0 1rem 1rem;
+    margin: 0;
+    font-size: 150%;
+    
+  }
+
+  .section-3-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .section-3-content img {
+    margin-bottom: 2rem;
+    box-shadow: 8px 8px 15px -10px;
+  }
+
+  .section-3-content p {
+    margin: 0;
+    text-align: center;
+  }
+
+  .section-4 {
+    flex-direction: column-reverse;
+  }
+
+  .section-4-content p {
+    margin: 2rem 0 1rem;
+  }
+
+  .section-4 img {
+    width: 100%;
+  }
+
+  .section-5-text-overlay {
+    top: 54%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    font-size: 16px;
+    line-height: 1.8rem;
+  }
+
+  /* Soundbath page */
+  .fixed-BG img {
+    right: -10rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .section-3-title {
+    font-size: 130%;
+    padding: 0 1rem 0rem;
+  }
+
+  .section-3-content p {
+    font-size: 88%;
+  }
+
+  .section-3 img {
+    min-height: 14rem;
+  }
+
+  .section-5-text-overlay {
+    top: 54%;
+    left: -12%;
+    transform: translate(5%, -50%);
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
 }
