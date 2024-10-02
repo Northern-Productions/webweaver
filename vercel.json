@@ -1,0 +1,22 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)\\.(jpg|jpeg|png|gif|css|js)$",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=31536000, public"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(html|htm)$",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=3600, public"
+        }
+      ]
+    }
+  ]
+}
