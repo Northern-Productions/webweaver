@@ -11,6 +11,7 @@ body {
 }
 /* Google Fonts */
 
+/* Title and Nav bar effect */
 .scroll-fade-in {
   background: linear-gradient(to bottom, #ffffffee 60%, transparent 100%);
   opacity: 1;
@@ -22,6 +23,7 @@ body {
   opacity: 0;
   transition: opacity 2s ease-out;
 }
+/* Title and Nav bar effect */
 
 /* Full screen overlay */
 .overlay {
@@ -37,14 +39,23 @@ body {
   transition: opacity 1.5s ease;
 }
 
+/* Fade paragraph scroll effect */
+.fade-paragraph {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
 .fade-in {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .fade-out {
   opacity: 0;
 }
 /* Full screen overlay */
+/* Fade paragraph scroll effect */
 
 .title-md {
   text-align: center;

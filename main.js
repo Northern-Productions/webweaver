@@ -4,6 +4,8 @@ let isMenuOpen = false;
 
 const cloudHeader = document.getElementById("cloud-header");
 
+//------------------------------------------------------------
+
 // Function to toggle menu display
 const toggleMenu = () => {
   if (isMenuOpen) {
@@ -36,7 +38,9 @@ document.addEventListener("click", () => {
   }
 });
 
-// Event listener for window scroll
+//------------------------------------------------------------
+
+// Event listener for window scroll on nav bar
 window.addEventListener("scroll", () => {
   if (window.scrollY >= 10) {
     cloudHeader.classList.add("scroll-fade-in");
@@ -47,6 +51,9 @@ window.addEventListener("scroll", () => {
   }
 });
 
+//------------------------------------------------------------
+
+// Loading screen overlay
 const overlay = document.querySelector(".overlay");
 
 // Event listener for overlay
@@ -69,11 +76,15 @@ document.addEventListener("click", (event) => {
   }
 });
 
+//------------------------------------------------------------
+
 // Ensure the overlay is visible and has the fade-in class when the page starts loading
 document.addEventListener("DOMContentLoaded", function () {
   overlay.style.display = "block";
   overlay.classList.add("fade-in");
 });
+
+//------------------------------------------------------------
 
 // Event listener for window loading screen
 window.addEventListener("load", function () {
@@ -88,3 +99,31 @@ window.addEventListener("load", function () {
     { once: true }
   );
 });
+
+//------------------------------------------------------------
+
+// Event listener for scroll fade effect on paragraphs
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeElements = document.querySelectorAll(".fade-paragraph");
+
+  const observerOptions = {
+    root: null, // Use the viewport as the root
+    rootMargin: "0px",
+    threshold: 0.1, // Trigger when 10% of the element is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("fade-in");
+        observer.unobserve(entry.target); // Stop observing after the first fade-in
+      }
+    });
+  }, observerOptions);
+
+  fadeElements.forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+//------------------------------------------------------------
