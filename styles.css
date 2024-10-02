@@ -118,32 +118,32 @@ html, body {
 
 /* Parallax Img */
 .img1 {
-  background-image: url(images/Main-img-1.jpg);
+  background-image: url(images/Main-img-1.webp), url(images/Main-img-1.jpg);
   z-index: -1;
 }
 
 .img2 {
-  background-image: url(./images/Main-img-2.jpg);
+  background-image: url(images/Main-img-2.webp), url(./images/Main-img-2.jpg);
   z-index: -2;
 }
 
 .img3 {
-  background-image: url(./images/Main-img-3.jpg);
+  background-image: url(images/Main-img-3.webp), url(./images/Main-img-3.jpg);
   z-index: -3;
 }
 
 .img4 {
-  background-image: url(./images/aquarium-night-time-edit.jpg);
+  background-image: url(images/aquarium-night-time-edit.webp), url(./images/aquarium-night-time-edit.jpg);
   z-index: -4;
 }
 
 .sb-img1 {
-  background-image: url(./images/Soundbath-placeholder.png);
+  background-image: url(images/Soundbath-placeholder.webp), url(./images/Soundbath-placeholder.png);
   z-index: -1;
 }
 
 .sb-img2 {
-  background-image: url(./images/SB-flowersInField.png);
+  background-image: url(images/SB-flowersInField.webp), url(./images/SB-flowersInField.png);
   z-index: -2;
 }
 
