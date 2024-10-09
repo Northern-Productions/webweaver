@@ -1,3 +1,17 @@
+:root {
+  --cloud-header-color-in: linear-gradient(to bottom, #ffffffee 60%, transparent 100%);
+  --cloud-header-color-out: linear-gradient(to bottom, #ffffff, #ffffff, transparent 100%);
+  --navbar-color: linear-gradient(to bottom, #ffffffdd, #ffffff88, #ffffff44, transparent);
+  --phone-navbar-color: rgba(122, 122, 122, 0.7);
+  --main-bg: linear-gradient(to bottom right, rgb(251 215 157), #fffdc6);
+  --button-color-1: lightblue;
+  --button-text-color-white: white;
+  --footer-bg: linear-gradient(to bottom right, rgb(255, 208, 115), #cdbe4d);
+  --white-color: white;
+  --black-color: black;
+  --wheat-color: wheat;
+}
+
 /* Main site */
 html {
   scroll-behavior: smooth;
@@ -37,13 +51,13 @@ body {
 
 /* Title and Nav bar effect */
 .scroll-fade-in {
-  background: linear-gradient(to bottom, #ffffffee 60%, transparent 100%);
+  background: var(--cloud-header-color-in);
   opacity: 1;
   transition: opacity 2s ease-out;
 }
 
 .scroll-fade-out {
-  background: linear-gradient(to bottom, #ffffff, #ffffff, transparent 100%);
+  background: var(--cloud-header-color-out);
   opacity: 0;
   transition: opacity 2s ease-out;
 }
@@ -57,7 +71,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: wheat;
+  background-color: var(--wheat-color);
   opacity: 1;
   display: block;
   transition: opacity 1.5s ease;
@@ -87,7 +101,7 @@ body {
 }
 
 .spacer {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--black-color);
   width: 70%;
 }
 
@@ -119,7 +133,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background: linear-gradient(to bottom, #ffffffdd, #ffffff88, #ffffff44, transparent);
+  background: var(--navbar-color);
   padding: 1rem 0;
   top: 0;
   right: 0;
@@ -135,7 +149,7 @@ body {
 
 .title a {
   text-decoration: none;
-  color: black;
+  color: var(--black-color);
 }
 
 .nav-bar {
@@ -152,7 +166,7 @@ body {
   height: 2rem;
   display: flex;
   align-items: center;
-  color: black;
+  color: var(--black-color);
 }
 
 .nav-bar a:hover {
@@ -178,7 +192,7 @@ body {
   top: 59px;
   right: 0px;
   padding: 0.5rem 1rem;
-  background-color: rgba(122, 122, 122, 0.7);
+  background-color: var(--phone-navbar-color);
   opacity: 0;
   transition: visibility 0s 0.2s, opacity 0.2s ease-in-out;
   z-index: 200;
@@ -192,7 +206,7 @@ body {
 
 .phone-menu a {
   text-decoration: none;
-  color: black;
+  color: var(--black-color);
   font-size: 1rem;
   margin: 0.2rem 0;
   font-weight: 700;
@@ -256,7 +270,7 @@ body {
 }
 
 .main-bg {
-  background: linear-gradient(to bottom right, rgb(251 215 157), #fffdc6);
+  background: var(--main-bg);
 }
 
 .main-padding {
@@ -283,7 +297,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: white;
+  background-color: var(--white-color);
   border-radius: 10px;
   box-shadow: 10px 10px 12px -14px;
 }
@@ -311,7 +325,8 @@ body {
   margin: 1rem 0;
   font-size: 1rem;
   border: none;
-  background-color: lightblue;
+  background-color: var(--button-color-1);
+  color: var(--button-text-color-white);
   border-radius: 3px;
   padding: 5px 10px;
   cursor: pointer;
@@ -365,7 +380,8 @@ body {
 
 .section-4 button {
   border: none;
-  background-color: lightblue;
+  background-color: var(--button-color-1);
+  color: var(--button-text-color-white);
   padding: 1rem;
   border-radius: 7px;
   font-size: 15px;
@@ -386,7 +402,7 @@ body {
   position: fixed;
   top: 10%;
   background-color: transparent;
-  color: white;
+  color: var(--white-color);
   font-size: 30px;
   font-weight: 300;
   padding: 6rem 2rem;
@@ -403,7 +419,7 @@ body {
   padding: 2rem;
   text-align: center;
   font-size: 1.5rem;
-  background-color: wheat;
+  background-color: var(--wheat-color);
   border-radius: 20px;
 }
 
@@ -418,7 +434,7 @@ body {
 /* Footer */
 .footer {
   text-align: center;
-  background: linear-gradient(to bottom right, rgb(255, 208, 115), #cdbe4d);
+  background: var(--footer-bg);
 }
 
 .contact-icons {
@@ -431,8 +447,10 @@ body {
 /*----------------------------------------------------------------------------*/
 
 /* media queries */
-@media (min-width: 1440px) {
-  
+@media (forced-colors: active) {
+  * {
+    forced-color-adjust: none;
+  }
 }
 
 @media (max-width: 768px) {
