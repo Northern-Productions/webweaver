@@ -66,13 +66,10 @@ document.addEventListener("click", (event) => {
       overlay.classList.remove("fade-out");
     });
 
-    overlay.addEventListener(
-      "transitionend",
-      function () {
-        window.location.href = event.target.getAttribute("data-target");
-      },
-      { once: true }
-    );
+    // Delay the navigation slightly to ensure the overlay is fully visible
+    setTimeout(() => {
+      window.location.href = event.target.getAttribute("data-target");
+    }, 1200); // Adjust the delay as needed
   }
 });
 
