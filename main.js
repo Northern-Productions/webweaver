@@ -80,8 +80,40 @@ document.addEventListener("click", (event) => {
 
 // Ensure the overlay is visible and has the fade-in class when the page starts loading
 document.addEventListener("DOMContentLoaded", function () {
+  const overlay = document.getElementById("overlay");
+  const loadingBox = document.getElementById("loading-box");
+
+  // Ensure the overlay is visible and has the fade-in class when the page starts loading
   overlay.style.display = "block";
   overlay.classList.add("fade-in");
+
+  // Create an IntersectionObserver to observe the loading-box
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // When loading-box is fully visible, fade out the overlay
+        overlay.classList.add("fade-out");
+        overlay.classList.remove("fade-in");
+
+        overlay.addEventListener(
+          "transitionend",
+          function () {
+            overlay.style.display = "none";
+          },
+          { once: true }
+        );
+
+        // Stop observing the loading-box
+        observer.unobserve(loadingBox);
+      }
+    });
+  }, {
+    root: null, // Use the viewport as the root
+    threshold: 1.0 // Trigger when 100% of loading-box is visible
+  });
+
+  // Start observing the loading-box
+  observer.observe(loadingBox);
 });
 
 //------------------------------------------------------------
