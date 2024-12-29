@@ -378,13 +378,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 2rem 5rem;
   text-align: center;
   padding: 0 0 0 1rem;
 }
 
 .section-3 img {
   width: 40%;
+  height: 25rem;
 }
 
 .section-3-content p {
