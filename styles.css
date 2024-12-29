@@ -526,9 +526,8 @@ body {
     margin: 0;
   }
 
-  .section-3-content img {
-    margin-bottom: 2rem;
-    box-shadow: 8px 8px 15px -10px;
+  .section-3 img {
+    height: initial;
   }
 
   .section-3-content p {
