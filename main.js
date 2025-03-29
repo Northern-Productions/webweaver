@@ -85,29 +85,32 @@ document.addEventListener("DOMContentLoaded", function () {
   overlay.classList.add("fade-in");
 
   // Create an IntersectionObserver to observe the loading-box
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // When loading-box is fully visible, fade out the overlay
-        overlay.classList.add("fade-out");
-        overlay.classList.remove("fade-in");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // When loading-box is fully visible, fade out the overlay
+          overlay.classList.add("fade-out");
+          overlay.classList.remove("fade-in");
 
-        overlay.addEventListener(
-          "transitionend",
-          function () {
-            overlay.style.display = "none";
-          },
-          { once: true }
-        );
+          overlay.addEventListener(
+            "transitionend",
+            function () {
+              overlay.style.display = "none";
+            },
+            { once: true }
+          );
 
-        // Stop observing the loading-box
-        observer.unobserve(loadingBox);
-      }
-    });
-  }, {
-    root: null, // Use the viewport as the root
-    threshold: 1.0 // Trigger when 100% of loading-box is visible
-  });
+          // Stop observing the loading-box
+          observer.unobserve(loadingBox);
+        }
+      });
+    },
+    {
+      root: null, // Use the viewport as the root
+      threshold: 1.0, // Trigger when 100% of loading-box is visible
+    }
+  );
 
   // Start observing the loading-box
   observer.observe(loadingBox);
@@ -156,3 +159,20 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //------------------------------------------------------------
+
+// EmailJS.com code
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.init("pkCzO3t2wGXv6vJPD"); // Replace with your EmailJS user ID
+    emailjs.sendForm("service_a0n5pao", "template_n8bxtq6", this).then(
+      function () {
+        alert("Email sent successfully!");
+      },
+      function (error) {
+        alert("Failed to send email: " + error.text);
+      }
+    );
+  });

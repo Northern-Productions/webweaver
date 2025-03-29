@@ -28,6 +28,10 @@
   text-rendering: optimizeLegibility;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /* Main site */
 html {
   scroll-behavior: smooth;
@@ -265,6 +269,16 @@ body {
   z-index: -2;
 }
 
+.full-page {
+  max-height: 100vh; /* Set a max-height for the full-page sections */
+  min-height: 100%; /* Set a min-height for the full-page sections */
+}
+
+.half-page {
+  max-height: 50vh; /* Set a max-height for the half-page sections */
+  min-height: 50%; /* Set a min-height for the half-page sections */
+}
+
 .img1,
 .img2,
 .img3,
@@ -276,8 +290,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 100vh;
-  min-height: 100%;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -434,6 +446,15 @@ body {
   font-weight: 300;
   padding: 6rem 2rem;
   line-height: 2.5rem;
+}
+
+/*----------------------------------------------------------------------------*/
+
+#contact-form {
+  position: fixed;
+  bottom: 25rem;
+  left: 50%;
+  right: 50%;
 }
 
 /*----------------------------------------------------------------------------*/

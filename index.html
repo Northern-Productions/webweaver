@@ -64,7 +64,7 @@
     </div>
 
     <!-- Parallax img1 -->
-    <div class="img1"></div>
+    <div class="img1 full-page"></div>
 
     <!-- Main Content -->
     <div id="loading-box">
@@ -111,7 +111,8 @@
       </div>
     </div>
 
-    <div class="img2"></div>
+    <div class="img1 half-page"></div>
+    <!-- This is a duplicate of the first image to create a parallax effect -->
 
     <div class="main-section main-bg main-padding">
       <h2 class="title-md">
@@ -166,7 +167,8 @@
       </div>
     </div>
 
-    <div class="img3"></div>
+    <div class="img1 half-page"></div>
+    <!-- This is a duplicate of the first image to create a parallax effect -->
 
     <div class="main-section main-bg">
       <div class="section-3">
@@ -188,7 +190,7 @@
       </div>
     </div>
 
-    <div class="img4">
+    <div class="img1 half-page">
       <div class="section-5"></div>
     </div>
 
@@ -218,18 +220,28 @@
 
           <button title="newsletter" class="newsletter-btn">Newsletter</button>
         </div>
-        <img src="./images/Succlent3.jpg" alt="" />
+        <img
+          src="./images/dragon-water.jpg"
+          alt="Dragonfly resting on a spiderweb in the rain"
+        />
       </div>
     </div>
+
+    <form id="contact-form">
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
 
     <footer class="main-section main-padding footer">
       <div class="contact-info">
         <h3>Ways to Connect With Me</h3>
         <div class="contact-icons">
-          <i class="fa-solid fa-envelope"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-solid fa-podcast"></i>
+          <i class="fa-solid fa-envelope pointer"></i>
+          <i class="fa-brands fa-instagram pointer"></i>
+          <i class="fa-brands fa-facebook pointer"></i>
+          <i class="fa-solid fa-podcast pointer"></i>
         </div>
       </div>
       <div class="np-link">
@@ -242,5 +254,6 @@
     </footer>
 
     <script src="./main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </body>
 </html>
