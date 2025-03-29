@@ -164,15 +164,58 @@ document.addEventListener("DOMContentLoaded", () => {
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (e) {
-    e.preventDefault();
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    const submitButton = this.querySelector("button[type='submit']");
+    submitButton.disabled = true; // Disable the submit button
 
     emailjs.init("pkCzO3t2wGXv6vJPD"); // Replace with your EmailJS user ID
     emailjs.sendForm("service_a0n5pao", "template_n8bxtq6", this).then(
       function () {
+        // Re-enable the submit button after 3 seconds
+        setTimeout(() => {
+          submitButton.disabled = false;
+        }, 3000);
+
         alert("Email sent successfully!");
+        document.getElementById("contact-form").reset(); // Clear the form inputs
       },
       function (error) {
         alert("Failed to send email: " + error.text);
+
+        // Re-enable the submit button after 3 seconds
+        setTimeout(() => {
+          submitButton.disabled = false;
+        }, 3000);
       }
     );
   });
+
+//------------------------------------------------------------
+
+// Select the contact form and the envelope icon
+const contactForm = document.getElementById("contact-form");
+const envelopeIcon = document.querySelector(".fa-envelope");
+
+// Add a click event listener to the envelope icon
+envelopeIcon.addEventListener("click", () => {
+  // Toggle the visibility of the contact form
+  if (
+    contactForm.style.display === "none" ||
+    contactForm.style.display === ""
+  ) {
+    contactForm.style.display = "flex"; // Show the form
+  }
+});
+
+// Select the contact form and the close button
+const closeButton = document.getElementById("contact-form-close");
+
+// Add a click event listener to the close button
+closeButton.addEventListener("click", () => {
+  contactForm.style.display = "none"; // Hide the contact form
+});
+
+//------------------------------------------------------------
+
+// Function to handle the form submission

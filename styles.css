@@ -32,6 +32,10 @@
   cursor: pointer;
 }
 
+.color-black {
+  color: black;
+}
+
 /* Main site */
 html {
   scroll-behavior: smooth;
@@ -452,9 +456,38 @@ body {
 
 #contact-form {
   position: fixed;
-  bottom: 25rem;
+  top: 50%;
   left: 50%;
-  right: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hidden */
+  z-index: 1000; /* Ensure it appears above other content */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #b0b579;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#contact-form-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--black-color);
+  background: none;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 /*----------------------------------------------------------------------------*/
