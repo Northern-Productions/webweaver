@@ -234,7 +234,7 @@ body {
 
 /* Parallax Img */
 .img1 {
-  background-image: url(images/Main-img-1.webp), url(images/Main-img-1.jpg);
+  background-image: url(images/Mossy-rocks.jpg);
   z-index: -1;
 }
 
@@ -249,8 +249,7 @@ body {
 }
 
 .img4 {
-  background-image: url(images/aquarium-night-time-edit.webp),
-    url(./images/aquarium-night-time-edit.jpg);
+  background-image: url(images/dragon-water.jpg);
   z-index: -4;
 }
 
