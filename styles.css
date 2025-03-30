@@ -268,8 +268,8 @@ body {
 }
 
 .sb-img2 {
-  background-image: url(images/SB-flowersInField.webp),
-    url(./images/SB-flowersInField.png);
+  background-image: url(images/WebsiteGraphicSoundHealingPage.webp),
+    url(images/WebsiteGraphicSoundHealingPage.png);
   z-index: -2;
 }
 
@@ -299,6 +299,13 @@ body {
 /*----------------------------------------------------------------------------*/
 
 /* Home page */
+#main-page-img {
+  height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Main Intro */
 .main-section,
 .sb-section {
@@ -455,11 +462,12 @@ body {
 /*----------------------------------------------------------------------------*/
 
 #contact-form {
+  display: none; /* Initially hidden */
+  width: 40%;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none; /* Initially hidden */
   z-index: 1000; /* Ensure it appears above other content */
   flex-direction: column;
   justify-content: center;
@@ -508,6 +516,13 @@ body {
   margin: 0;
   text-align: center;
   font-size: 1.1rem;
+}
+
+/*----------------------------------------------------------------------------*/
+
+/* Offerings Page */
+#offerings-container {
+  margin-top: 10rem;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -608,6 +623,10 @@ body {
     transform: translate(0%, -50%);
     font-size: 16px;
     line-height: 1.8rem;
+  }
+
+  #contact-form {
+    width: 70%;
   }
 
   /* Soundbath page */
