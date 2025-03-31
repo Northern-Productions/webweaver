@@ -261,6 +261,8 @@ body {
   z-index: -4;
 }
 
+/* Sound bath page */
+
 .sb-img1 {
   background-image: url(images/Soundbath-placeholder.webp),
     url(./images/Soundbath-placeholder.png);
@@ -288,7 +290,8 @@ body {
 .img3,
 .img4,
 .sb-img1,
-.sb-img2 {
+.sb-img2,
+.offerings-bg {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -522,7 +525,43 @@ body {
 
 /* Offerings Page */
 #offerings-container {
-  margin-top: 10rem;
+  padding: 8rem 4rem 2rem;
+  background-image: url(images/Succlent3.jpg);
+}
+
+.oc-1 {
+  background-color: #4b70d0;
+}
+
+.oc-1,
+.oc-4 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-1,
+.oc-2-3,
+.oc-4 {
+  max-width: 88%;
+  display: flex;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 10px solid goldenrod;
+}
+
+.oc-2-3 {
+  justify-content: space-evenly;
+  background-color: #bbdb6b;
+}
+
+.oc-2,
+.oc-3 {
+  width: 45%;
+}
+
+.oc-4 {
+  background-color: #cdbe4d;
 }
 
 /*----------------------------------------------------------------------------*/
