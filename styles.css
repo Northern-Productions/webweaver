@@ -672,9 +672,25 @@ body {
   .fixed-BG img {
     right: -10rem;
   }
+
+  /* Offerings Page */
+  #offerings-container {
+    padding: 6rem 2rem 2rem;
+  }
+
+  .oc-2-3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .oc-2,
+  .oc-3 {
+    width: 100%;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .section-3-title {
     font-size: 130%;
     padding: 0 1rem 0rem;
@@ -694,5 +710,17 @@ body {
     transform: translate(5%, -50%);
     font-size: 16px;
     line-height: 1.5rem;
+  }
+
+  /* Offerings Page */
+  #offerings-container {
+    padding: 4rem 1rem 1rem;
+  }
+
+  .oc-1,
+  .oc-2-3,
+  .oc-4 {
+    max-width: 100%;
+    padding: 1rem;
   }
 }
