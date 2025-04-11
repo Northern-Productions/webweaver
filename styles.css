@@ -72,6 +72,13 @@ body {
   font-weight: 100;
   font-style: normal;
 }
+
+.cinzel-decorative {
+  font-family: "Cinzel Decorative", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
 /* Google Fonts */
 
 /* Title and Nav bar effect */
