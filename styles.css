@@ -518,7 +518,6 @@ body {
 /*----------------------------------------------------------------------------*/
 
 /* Sound Baths page */
-/* Tree Video */
 .sb-caption {
   width: 50%;
   margin: 15rem 0 0;
@@ -533,6 +532,19 @@ body {
   margin: 0;
   text-align: center;
   font-size: 1.1rem;
+}
+
+.sb-text-break {
+  display: flex;
+  width: 100%;
+}
+
+.sb-text-break-outer {
+  width: 40%;
+}
+
+.sb-text-break-inner {
+  width: 20%;
 }
 
 /*----------------------------------------------------------------------------*/
