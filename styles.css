@@ -476,7 +476,7 @@ body {
   line-height: 2.5rem;
 }
 
-/*----------------------------------------------------------------------------*/
+/*--------------------------CONTACT FORM-----------------------------------*/
 
 #contact-form {
   display: none; /* Initially hidden */
@@ -515,7 +515,7 @@ body {
   border: 1px solid #ccc;
 }
 
-/*----------------------------------------------------------------------------*/
+/*-------------------------^^^CONTACT FORM^^^-------------------------------*/
 
 /* Sound Baths page */
 .sb-caption {
@@ -547,6 +547,15 @@ body {
 
 .sb-text-break-inner {
   width: 23%;
+}
+
+.sb-section-2 {
+  width: 100%;
+  height: 30rem;
+}
+
+.sb-section-2 p {
+  margin: 0 1rem;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -743,15 +752,6 @@ body {
   /* Soundbath page */
   .sb-text-break {
     width: 100%;
-  }
-
-  .sb-section-2 {
-    width: 100%;
-    height: 30rem;
-  }
-
-  .sb-section-2 p {
-    margin: 0 1rem;
   }
 
   /* Offerings Page */
