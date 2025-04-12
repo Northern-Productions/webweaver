@@ -81,6 +81,13 @@ body {
 }
 /* Google Fonts */
 
+/*--------------------------------MIRROR IMAGE-----------------------------------*/
+.mirror-image {
+  transform: scaleX(-1); /* Flip the image horizontally */
+  display: block; /* Ensure proper layout */
+}
+/*--------------------------------MIRROR IMAGE-----------------------------------*/
+
 /* Title and Nav bar effect */
 .scroll-fade-in {
   background: var(--cloud-header-color-in);
