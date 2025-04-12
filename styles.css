@@ -740,6 +740,20 @@ body {
     line-height: 1.5rem;
   }
 
+  /* Soundbath page */
+  .sb-text-break {
+    width: 100%;
+  }
+
+  .sb-section-2 {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .sb-section-2 p {
+    margin: 0 1rem;
+  }
+
   /* Offerings Page */
   #offerings-container {
     padding: 4rem 1rem 1rem;
