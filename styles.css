@@ -417,9 +417,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2rem 5rem;
+  margin: 2rem 0rem;
   text-align: center;
-  padding: 0 0 0 1rem;
+  padding: 0 1rem;
 }
 
 .section-3 img {
@@ -429,7 +429,7 @@ body {
 
 .section-3-content p {
   font-size: 18px;
-  margin: 0 3rem;
+  margin: 0;
 }
 
 .section-4 {
@@ -658,6 +658,12 @@ body {
 @media (forced-colors: active) {
   * {
     forced-color-adjust: none;
+  }
+}
+
+@media (max-width: 830px) {
+  .mirror-image {
+    display: none;
   }
 }
 
