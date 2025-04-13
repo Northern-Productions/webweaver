@@ -27,6 +27,42 @@
   --blue-color: #4b70d0;
   text-rendering: optimizeLegibility;
 }
+/* ---------------------------IMG SIZE------------------------------ */
+.full-size {
+  width: 100%;
+}
+
+.half-size {
+  width: 50%;
+}
+
+.third-size {
+  width: 20%;
+  min-width: 15rem;
+}
+/* ---------------------------IMG SIZE------------------------------ */
+/*---------------------------FLEX OPTIONS------------------------------------*/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+/*---------------------------FLEX OPTIONS------------------------------------*/
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .pointer {
   cursor: pointer;
@@ -291,7 +327,7 @@ body {
 
 /* Offerings page */
 .offerings-bg {
-  background-image: url(images/river\ LA\ background.jpg);
+  background-image: url(images/OFFERINGS\ PAGE\ BG\ IMAGE.jpg);
   z-index: -1;
 }
 
@@ -603,28 +639,46 @@ body {
 /*----------------------------------------------------------------------------*/
 
 /* Offerings Page */
-.oc-2-3,
-.oc-4 {
-  width: 100%;
-  display: flex;
-  margin: 0;
-  padding: 0;
+.oc-staggered-img {
+  margin: 0 2rem 0 0;
 }
 
-.oc-2-3 {
+.oc-landing-img {
+  width: 50%;
+  box-shadow: 0px 0px 20px -5px #ffdcbe;
+}
+
+.oc-section-1 div div p {
+  font-size: 16px;
+}
+
+.oc-section-2,
+.oc-section-3 {
+  display: flex;
+  margin: 0;
+  padding: 2rem;
+}
+
+.oc-section-2 {
   justify-content: space-evenly;
   flex-direction: row;
 }
 
-.oc-2,
-.oc-3 {
-  width: 45%;
+.oc-s2-1,
+.oc-s2-2 {
+  width: 50%;
 }
 
-.oc-4 {
+.oc-section-3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.oc-bold-blue {
+  font-weight: 800;
+  font-size: 26px;
+  color: var(--blue-color);
 }
 
 /*----------------------------------------------------------------------------*/
@@ -763,18 +817,23 @@ body {
   }
 
   /* Offerings Page */
-  #offerings-container {
-    padding: 6rem 2rem 2rem;
+  .tablet-display-none {
+    display: none;
   }
 
-  .oc-2-3 {
+  .oc-s1-img {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .oc-section-2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .oc-2,
-  .oc-3 {
+  .oc-s2-1,
+  .oc-s2-2 {
     width: 100%;
   }
 }
