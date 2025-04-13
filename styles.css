@@ -289,13 +289,19 @@ body {
   z-index: -2;
 }
 
+/* Offerings page */
+.offerings-bg {
+  background-image: url(images/river\ LA\ background.jpg);
+  z-index: -1;
+}
+
 .full-page {
-  max-height: 100vh; /* Set a max-height for the full-page sections */
+  height: 100vh; /* Set a max-height for the full-page sections */
   min-height: 100%; /* Set a min-height for the full-page sections */
 }
 
 .half-page {
-  max-height: 50vh; /* Set a max-height for the half-page sections */
+  height: 50vh; /* Set a max-height for the half-page sections */
   min-height: 50%; /* Set a min-height for the half-page sections */
 }
 
@@ -597,35 +603,17 @@ body {
 /*----------------------------------------------------------------------------*/
 
 /* Offerings Page */
-#offerings-container {
-  padding: 8rem 4rem 2rem;
-  background-image: url(images/Offerings-BG.jpg);
-}
-
-.oc-1 {
-  background-color: #4b70d0;
-}
-
-.oc-1,
-.oc-4 {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.oc-1,
 .oc-2-3,
 .oc-4 {
-  max-width: 88%;
+  width: 100%;
   display: flex;
-  margin: 2rem auto;
-  padding: 2rem;
-  border: 10px solid goldenrod;
+  margin: 0;
+  padding: 0;
 }
 
 .oc-2-3 {
   justify-content: space-evenly;
-  background-color: #bbdb6b;
+  flex-direction: row;
 }
 
 .oc-2,
@@ -634,7 +622,9 @@ body {
 }
 
 .oc-4 {
-  background-color: #cdbe4d;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*----------------------------------------------------------------------------*/
