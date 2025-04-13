@@ -746,6 +746,26 @@ body {
     right: -10rem;
   }
 
+  .sb-section-2 {
+    flex-direction: column;
+  }
+
+  .sb-section-2-text {
+    margin: 0 0 2rem;
+    width: 100%;
+  }
+
+  .sb-section-2-text p {
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+
+  .sb-section-2-btn {
+    width: 21rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   /* Offerings Page */
   #offerings-container {
     padding: 6rem 2rem 2rem;
