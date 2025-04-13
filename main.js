@@ -195,17 +195,19 @@ document
 
 // Select the contact form and the envelope icon
 const contactForm = document.getElementById("contact-form");
-const envelopeIcon = document.querySelector(".fa-envelope");
+const emailBtn = document.querySelectorAll(".email-btn");
 
-// Add a click event listener to the envelope icon
-envelopeIcon.addEventListener("click", () => {
-  // Toggle the visibility of the contact form
-  if (
-    contactForm.style.display === "none" ||
-    contactForm.style.display === ""
-  ) {
-    contactForm.style.display = "flex"; // Show the form
-  }
+emailBtn.forEach((btn) => {
+  // Add a click event listener to the envelope icon
+  btn.addEventListener("click", () => {
+    // Toggle the visibility of the contact form
+    if (
+      contactForm.style.display === "none" ||
+      contactForm.style.display === ""
+    ) {
+      contactForm.style.display = "flex"; // Show the form
+    }
+  });
 });
 
 // Select the contact form and the close button

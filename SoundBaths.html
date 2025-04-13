@@ -174,17 +174,29 @@
           public event, book a call with me. You can also email me here.
         </p>
         <div class="sb-section-2-btn">
-          <button>Set up a call</button>
-          <button>Email me</button>
+          <a href="https://calendly.com/webweaver14" target="_blank"
+            ><button>Set up a call</button></a
+          >
+          <button class="email-btn">Email me</button>
         </div>
       </div>
     </div>
+
+    <form id="contact-form">
+      <div id="contact-form-close">X</div>
+      <!-- Close button for the form -->
+      <h2>Contact Me</h2>
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
 
     <footer class="main-section main-padding footer">
       <div class="contact-info">
         <h3>Ways to Connect With Me</h3>
         <div class="contact-icons">
-          <i class="fa-solid fa-envelope pointer"></i>
+          <i class="email-btn fa-solid fa-envelope pointer"></i>
           <a
             class="color-black"
             href="https://www.instagram.com/iamemilymayberry?igsh=MW4zbzFnbHgxMHN6dQ=="
