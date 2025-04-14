@@ -670,10 +670,21 @@ body {
   width: 50%;
 }
 
+.oc-s2-1 h3 b,
+.oc-s2-2 h3 b {
+  font-size: 1.6rem;
+}
+
 .oc-section-3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.oc-section-3 h3 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
 .oc-bold-blue {
@@ -822,7 +833,11 @@ body {
     display: none;
   }
 
-  .oc-s1-img {
+  .oc-landing-img {
+    width: 85%;
+  }
+
+  .oc-img {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -836,6 +851,11 @@ body {
   .oc-s2-1,
   .oc-s2-2 {
     width: 100%;
+  }
+
+  .oc-s2-1 h3 b,
+  .oc-s2-2 h3 b {
+    margin-left: 1rem;
   }
 }
 
@@ -867,9 +887,6 @@ body {
   }
 
   /* Offerings Page */
-  #offerings-container {
-    padding: 4rem 1rem 1rem;
-  }
 
   .oc-1,
   .oc-2-3,
