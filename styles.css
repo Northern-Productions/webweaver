@@ -424,11 +424,7 @@ body {
 }
 
 .main-card a {
-  margin-top: auto;
-}
-
-.main-card button {
-  margin: 1rem 0;
+  margin: auto 0 1rem;
   font-size: 1rem;
   border: none;
   background-color: var(--blue-color);
@@ -436,6 +432,9 @@ body {
   border-radius: 3px;
   padding: 5px 10px;
   cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .main-card p {
@@ -640,7 +639,7 @@ body {
 
 /* Offerings Page */
 .oc-staggered-img {
-  margin: 0 2rem 0 0;
+  margin: 0 2rem;
 }
 
 .oc-landing-img {
@@ -648,15 +647,25 @@ body {
   box-shadow: 0px 0px 20px -5px #ffdcbe;
 }
 
-.oc-section-1 div div p {
-  font-size: 16px;
+.oc-bold-blue {
+  font-weight: 800;
+  font-size: 26px;
+  color: var(--blue-color);
 }
 
+.oc-section-1 div p,
+.oc-section-3 div p {
+  font-size: 16px;
+  max-width: 41%;
+}
+
+.oc-section-1,
 .oc-section-2,
-.oc-section-3 {
+.oc-section-3,
+.oc-section-4 {
   display: flex;
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 6rem;
 }
 
 .oc-section-2 {
@@ -687,10 +696,21 @@ body {
   line-height: 2.5rem;
 }
 
-.oc-bold-blue {
-  font-weight: 800;
-  font-size: 26px;
-  color: var(--blue-color);
+.oc-s4-ctn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.oc-s4-img,
+.oc-s4-text {
+  width: 45%;
+}
+
+.oc-s4-img img,
+.oc-s4-text p {
+  width: 100%;
+  height: auto;
 }
 
 /*----------------------------------------------------------------------------*/
