@@ -31,7 +31,7 @@
 
 .paypal-ctn {
   width: 100%;
-  margin: 7rem 0 2rem;
+  margin: 4rem 0 2rem;
   text-align: center;
 }
 
@@ -701,6 +701,10 @@ body {
   font-size: 1.6rem;
 }
 
+.zoom-schedule img {
+  width: 40%;
+}
+
 .oc-section-3 {
   flex-direction: column;
   justify-content: center;
@@ -861,6 +865,10 @@ body {
     margin-bottom: 2rem;
   }
 
+  .zoom-schedule img {
+    width: 70%;
+  }
+
   .section-3-title {
     padding: 0 1rem 1rem;
     margin: 0;
@@ -990,6 +998,10 @@ body {
   }
 
   /* ---------------------------------------------------------- */
+
+  .zoom-schedule img {
+    width: 108%;
+  }
 
   .section-3-title {
     font-size: 130%;
