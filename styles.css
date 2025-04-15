@@ -27,6 +27,23 @@
   --blue-color: #4b70d0;
   text-rendering: optimizeLegibility;
 }
+/* ---------------------------Paypal------------------------------ */
+
+.paypal-ctn {
+  width: 100%;
+  margin: 7rem 0 2rem;
+  text-align: center;
+}
+
+.paypal-link {
+  padding: 1rem;
+  background-color: var(--blue-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* ---------------------------Paypal------------------------------ */
 /* ---------------------------IMG SIZE------------------------------ */
 .full-size {
   width: 100%;
@@ -713,6 +730,14 @@ body {
   height: auto;
 }
 
+.final-img-big {
+  display: block;
+}
+
+.final-img-small {
+  display: none;
+}
+
 /*----------------------------------------------------------------------------*/
 
 /* Footer */
@@ -734,6 +759,40 @@ body {
 @media (forced-colors: active) {
   * {
     forced-color-adjust: none;
+  }
+}
+
+@media (max-width: 1025px) {
+  .oc-section-1,
+  .oc-section-2,
+  .oc-section-3 {
+    padding: 2rem;
+  }
+
+  .oc-section-4 {
+    padding: 0;
+  }
+
+  .oc-s4-ctn {
+    flex-direction: column-reverse;
+  }
+
+  .oc-s4-img {
+    width: 100%;
+  }
+
+  .oc-section-1 div p,
+  .oc-section-3 div p {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .final-img-big {
+    display: none;
+  }
+
+  .final-img-small {
+    display: block;
   }
 }
 
