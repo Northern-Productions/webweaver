@@ -730,6 +730,23 @@ body {
   height: auto;
 }
 
+.oc-s4-text p {
+  padding-bottom: 1rem;
+}
+
+.join-now-btn {
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--button-text-color-white);
+  padding: 1rem;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-decoration: none;
+  margin-left: 40%;
+}
+
 .final-img-big {
   display: block;
 }
