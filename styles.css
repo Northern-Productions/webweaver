@@ -337,8 +337,7 @@ body {
 }
 
 .sb-img2 {
-  background-image: url(images/WebsiteGraphicSoundHealingPage.webp),
-    url(images/WebsiteGraphicSoundHealingPage.png);
+  background-image: url(images/footer.jpg);
   z-index: -2;
 }
 
