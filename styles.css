@@ -741,9 +741,8 @@ body {
   border-radius: 7px;
   font-size: 15px;
   cursor: pointer;
-  margin-top: 1rem;
   text-decoration: none;
-  margin-left: 40%;
+  margin: 0 auto;
 }
 
 .final-img-big {
@@ -793,8 +792,14 @@ body {
     flex-direction: column-reverse;
   }
 
-  .oc-s4-img {
+  .oc-s4-img,
+  .oc-s4-text {
     width: 100%;
+  }
+
+  .oc-s4-text p {
+    width: 80%;
+    margin: 2rem auto 1rem;
   }
 
   .oc-section-1 div p,
@@ -988,5 +993,10 @@ body {
   .oc-4 {
     max-width: 100%;
     padding: 1rem;
+  }
+
+  /* Offerings Page */
+  .oc-s4-text p {
+    width: 90%;
   }
 }
