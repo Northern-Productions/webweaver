@@ -972,7 +972,7 @@ body {
 
 @media (max-width: 450px) {
   .QPage {
-    height: 25vh; /* Set a max-height for the half-page sections */
+    height: 25vh; /* Set a max-height for the quarter-page sections */
     min-height: 25%;
   }
 
