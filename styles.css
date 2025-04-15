@@ -970,7 +970,12 @@ body {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 450px) {
+  .QPage {
+    height: 25vh; /* Set a max-height for the half-page sections */
+    min-height: 25%;
+  }
+
   .section-3-title {
     font-size: 130%;
     padding: 0 1rem 0rem;
@@ -1006,7 +1011,6 @@ body {
     padding: 1rem;
   }
 
-  /* Offerings Page */
   .oc-s4-text p {
     width: 90%;
   }
