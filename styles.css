@@ -976,6 +976,11 @@ body {
     min-height: 25%;
   }
 
+  .HPage {
+    height: 50vh; /* Set a max-height for the half-page sections */
+    min-height: 50%;
+  }
+
   .phone-white-BG {
     background-color: white;
   }
