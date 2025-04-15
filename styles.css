@@ -693,6 +693,7 @@ body {
 .oc-s2-1,
 .oc-s2-2 {
   width: 50%;
+  max-width: 35rem;
 }
 
 .oc-s2-1 h3 b,
