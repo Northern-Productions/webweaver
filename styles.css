@@ -976,6 +976,12 @@ body {
     min-height: 25%;
   }
 
+  .phone-white-BG {
+    background-color: white;
+  }
+
+  /* ---------------------------------------------------------- */
+
   .section-3-title {
     font-size: 130%;
     padding: 0 1rem 0rem;
