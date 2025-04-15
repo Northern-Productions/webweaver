@@ -134,6 +134,20 @@ window.addEventListener("load", function () {
 
 //------------------------------------------------------------
 
+// Ensure the overlay is hidden when the page is restored from the cache
+window.addEventListener("pageshow", function (event) {
+  const overlay = document.querySelector(".overlay");
+
+  // Check if the page is loaded from the cache
+  if (event.persisted) {
+    overlay.style.display = "none"; // Hide the overlay
+    overlay.classList.remove("fade-in");
+    overlay.classList.add("fade-out");
+  }
+});
+
+//------------------------------------------------------------
+
 // Event listener for scroll fade effect on paragraphs
 document.addEventListener("DOMContentLoaded", () => {
   const fadeElements = document.querySelectorAll(".fade-paragraph");
