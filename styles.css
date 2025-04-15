@@ -814,7 +814,7 @@ body {
 }
 
 @media (max-width: 830px) {
-  .mirror-image {
+  .mirror-image-home {
     display: none;
   }
 }
