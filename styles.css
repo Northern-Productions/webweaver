@@ -723,6 +723,10 @@ body {
   width: 45%;
 }
 
+.oc-s4-img-text-break {
+  display: none;
+}
+
 .oc-s4-img img,
 .oc-s4-text p {
   width: 100%;
@@ -956,6 +960,12 @@ body {
   .oc-s2-1 h3 b,
   .oc-s2-2 h3 b {
     margin-left: 1rem;
+  }
+
+  .oc-s4-img-text-break,
+  .oc-s4-img-text-break img {
+    display: block;
+    width: 100%;
   }
 }
 
