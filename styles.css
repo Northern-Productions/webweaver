@@ -313,16 +313,6 @@ body {
   z-index: -1;
 }
 
-.img2 {
-  background-image: url(images/Main-img-2.webp), url(./images/Main-img-2.jpg);
-  z-index: -2;
-}
-
-.img3 {
-  background-image: url(images/Main-img-3.webp), url(./images/Main-img-3.jpg);
-  z-index: -3;
-}
-
 .img4 {
   background-image: url(images/dragon-water.jpg);
   z-index: -4;
@@ -375,7 +365,7 @@ body {
 
 /* Home page */
 #main-page-img {
-  height: 30rem;
+  height: 45rem;
   position: absolute;
   top: 50%;
   left: 50%;
